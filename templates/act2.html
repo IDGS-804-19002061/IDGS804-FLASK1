@@ -1,0 +1,51 @@
+
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+    <h1>Operaciones Basicas</h1>
+    <div class="row">
+        <form action="/res2" method="POST" class="form-horizontal">
+            <div class="control-group">
+                <label for="punto1" class="control-label"></label>
+                <div class="controls">
+                    <input type="text" name="punto1" class="input-xlarge" placeholder="Punto 1">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="punto2" class="control-label"></label>
+                <div class="controls">
+                    <input type="text" name="punto2" class="input-xlarge" placeholder="Punto 2">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="punto3" class="control-label"></label>
+                <div class="controls">
+                    <input type="text" name="punto3" class="input-xlarge" placeholder="Punto 1">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="punto4" class="control-label"></label>
+                <div class="controls">
+                    <input type="text" name="punto4" class="input-xlarge" placeholder="Punto 2">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="controls">
+                    <button type="submit" class="btn btn-default btn-primary">
+                        <i class="icon-trash icon-white"></i> Calcular
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

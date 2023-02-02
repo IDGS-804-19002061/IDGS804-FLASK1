@@ -1,0 +1,47 @@
+
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+    <h1>Operaciones Basicas</h1>
+    <div class="row">
+        <form action="/resultado" method="POST" class="form-horizontal">
+            <div class="container">
+                <label>Suma </label>
+                <input type="radio" name="radio" value="s"/><br></br>
+                <label>Resta </label>
+                <input type="radio" name="radio" value="r"/><br></br>
+                <label>Mutiplicacion </label>
+                <input type="radio" name="radio" value="m"/><br></br>
+                <label>Dvision </label>
+                <input type="radio" name="radio" value="d"/><br></br>
+            </div>
+            <div class="control-group">
+                <label for="txtNum1" class="control-label"></label>
+                <div class="controls">
+                    <input type="text" name="txtNum1" class="input-xlarge" placeholder="Numero 1">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="txtNum2" class="control-label"></label>
+                <div class="controls">
+                    <input type="text" name="txtNum2" class="input-xlarge" placeholder="Numero 2">
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="controls">
+                    <button type="submit" class="btn btn-default btn-primary">
+                        <i class="icon-trash icon-white"></i> Calcular
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}
