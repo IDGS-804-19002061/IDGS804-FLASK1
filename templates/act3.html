@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <title>Cinepolis</title>
+    <style>
+        body{
+            padding-top: 60px;
+            background-color: blue;
+            color: white;
+        }
+        .tr-head{background: gray;}
+    </style>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-responsive.min.css">
+</head>
+<body>
+
+    <form action="/pago" method="post" class="form-horizontal">
+        <div class="control-group">
+            <label for="nombre" class="control-label">Nombre</label>
+            <div class="controls">
+                <input type="text" name="nombre" class="input-xlarge" placeholder="Nombre">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label for="compradores" class="control-label">Cantidad de compradores</label>
+            <div class="controls">
+                <input type="number" name="compradores" class="input-xlarge" placeholder="Compradores">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label for="punto3" class="control-label">Tarjeta Cineco</label>
+            <div class="controls">
+                <input type="radio" name="Card" value="s" class="input-xlarge">
+                Si
+                <input type="radio" name="Card" value="n" class="input-xlarge">
+                No
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label for="boletos" class="control-label">Cantidad de boletos</label>
+            <div class="controls">
+                <input type="number" name="boletos" class="input-xlarge" placeholder="Boletos">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <button type="submit" class="btn btn-default btn-primary">
+                     Procesar
+                </button>
+            </div>
+
+        </div>
+    </form>
+
+
+</body>
+</html>
