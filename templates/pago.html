@@ -1,36 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
-    <title>Cinepolis</title>
-    <style>
-        body{
-            padding-top: 60px;
-            background-color: blue;
-            color: white;
-        }
-        .tr-head{background: gray;}
-    </style>
-    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-responsive.min.css">
-</head>
-<body>
+{% extends "cinepolisLayout.html" %}
 
-    <div class="container">
+{% block content %}
+<form class="form-horizontal">
+    <div class="control-group">
         <label for="pago" class="control-label">Valor a pagar</label>
         <div class="controls">
-            <input type="number" name="pago" class="input-xlarge" value={{res}}>
+            <input type="text" name="pago" id="pago" placeholder={{res}}>
         </div>
     </div>
-    
-    <div class="controls">
-        <button href="/act3" class="btn btn-default btn-primary">
-            Salir
-        </button>
+
+    <div class="control-group">
+        <div class="controls">
+            <a href="/act3" class="btn btn-default btn-primary">
+                Regresar
+            </a>
+        </div>
+
     </div>
-
-
-</body>
-</html>
+</form>
+{% endblock %}
