@@ -33,7 +33,7 @@ def func():
 @app.route("/pago", methods=["post"])
 def pago():
     pago = Pago(
-        12000, 
+        12, 
         int(request.form.get("boletos")),
         int(request.form.get("compradores"))
         )

@@ -1,0 +1,26 @@
+{% extends "signoLayout.html" %}
+
+{% block content %}
+<form class="form-horizontal">
+    <div class="control-group">
+        <h1>Hola {{data.nombre}} {{data.aPaterno}} {{data.aMaterno}}</h1>
+        <h1>Tienes {{data.edad}} años y tu signo zodiacal es: </h1>
+        <div class="contenido">
+            <img src={{data.signo}} alt="Signo">
+        </div>
+        <br>
+        <br>
+        <br>
+        <h1>Calificacion: {{data.cal}}</h1>
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <a href="/act4" class="btn btn-default btn-primary">
+                Regresar
+            </a>
+        </div>
+
+    </div>
+</form>
+{% endblock %}

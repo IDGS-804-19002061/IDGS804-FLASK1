@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <title>Cinepolis</title>
+    <style>
+        body{
+            padding-top: 60px;
+            background-color: darkblue;
+            color: white;
+            text-align: left;
+        }
+        .tr-head{background: gray;}
+        .contenido{
+            width: 95%;
+            margin: auto;
+        }
+        .contenedor{
+            width: 90%;
+            margin: auto;
+        }
+        form{
+            width: 50%;
+            padding: 30px;
+            padding-top: 100px;
+            margin: auto;
+            border-color: white;
+            border-style: groove;
+            border-radius: 5px;
+        }
+
+        img{
+            width: 25%;
+            border-radius: 50px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: -50px;
+        }
+    </style>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap-responsive.min.css">
+</head>
+<body>
+
+    <div class="contenido">
+        {% block content %}
+        
+        {% endblock %}
+    </div>
+
+</body>
+</html>

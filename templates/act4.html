@@ -1,0 +1,86 @@
+{% extends "cinepolisLayout.html" %}
+
+{% block content %}
+<div class="contenedor">
+
+    <form action="/preguntas" method="post" class="form-horizontal">
+        <div class="control-group">
+            <label for="nombre" class="control-label">Nombre</label>
+            <div class="controls">
+                <input type="text" name="nombre" class="input-xlarge" placeholder="Nombre">
+            </div>
+        </div>
+    
+        <div class="control-group">
+            <label for="aPaterno" class="control-label">Apellido Paterno</label>
+            <div class="controls">
+                <input type="text" name="aPaterno" class="input-xlarge" placeholder="Apellido Paterno">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label for="aMaterno" class="control-label">Apellido Materno</label>
+            <div class="controls">
+                <input type="text" name="aMaterno" class="input-xlarge" placeholder="Apellido Materno">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label for="dia" class="control-label">Dia</label>
+            <div class="controls">
+                <input type="number" name="dia" class="input-xlarge" placeholder="dia">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label for="mes" class="control-label">Mes</label>
+            <div class="controls">
+                <input type="number" name="mes" class="input-xlarge" placeholder="mes">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label for="año" class="control-label">Año</label>
+            <div class="controls">
+                <input type="number" name="año" class="input-xlarge" placeholder="año">
+            </div>
+        </div>
+    
+        <div class="control-group">
+            <label for="sexo" class="control-label">Sexo</label>
+            <div class="controls">
+                Masculino
+                <input type="radio" name="sexo" value="m" class="input-xlarge">
+                Femenino
+                <input type="radio" name="sexo" value="f" class="input-xlarge">
+                
+            </div>
+        </div>
+    
+        <div class="control-group">
+            <div class="controls">
+                <button type="submit" class="btn btn-default btn-primary">
+                     Siguiente
+                </button>
+            </div>
+            <br>
+
+            <div>
+                <button onClick="refresh()" class="btn btn-default btn-primary">
+                     Limpiar
+                </button>
+            </div>
+    
+        </div>
+    </form>
+
+    <script>
+
+        function refresh(){
+            window.refresh()
+        }
+    </script>
+
+</div>
+
+{% endblock %}
