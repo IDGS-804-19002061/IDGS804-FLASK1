@@ -1,8 +1,14 @@
-{% extends "cinepolisLayout.html" %}
+{% extends "signoLayout.html" %}
 
 {% block content %}
 <div class="contenedor">
 
+    <div>
+        <button onClick="refresh()" class="btn btn-default btn-primary">
+             Limpiar
+        </button>
+    </div>
+    
     <form action="/preguntas" method="post" class="form-horizontal">
         <div class="control-group">
             <label for="nombre" class="control-label">Nombre</label>
@@ -64,12 +70,6 @@
                 </button>
             </div>
             <br>
-
-            <div>
-                <button onClick="refresh()" class="btn btn-default btn-primary">
-                     Limpiar
-                </button>
-            </div>
     
         </div>
     </form>
@@ -77,7 +77,7 @@
     <script>
 
         function refresh(){
-            window.refresh()
+            location.reload()
         }
     </script>
 
